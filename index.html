@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang='es'>
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width,initial-scale=1' />
+  <title>archivosErnest</title>
+  <link rel='stylesheet' href='css/style.css' />
+</head>
+<body>
+  <div class='bg'></div>
+  <nav class='sidebar'>
+    <div class='icon-btn' data-target='gallery' title='Galería'>📷</div>
+    <div class='icon-btn' data-target='about' title='Sobre mí'>👤</div>
+    <div class='icon-btn' data-target='contact' title='Contacto'>✉️</div>
+  </nav>
+
+  <main class='stage'>
+    <section class='window hidden' id='win-gallery'>
+      <div class='titlebar'>
+        <span>📁 Galería</span>
+        <button class='close'>X</button>
+      </div>
+      <div class='content gallery-grid'>
+        <div class='thumb' style="background-image:url('images/sample1.jpg')"></div>
+        <div class='thumb' style="background-image:url('images/sample2.jpg')"></div>
+      </div>
+    </section>
+
+    <section class='window hidden' id='win-about'>
+      <div class='titlebar'><span>👤 Sobre mí</span><button class='close'>X</button></div>
+      <div class='content'>
+        <p>Hola, soy Ernest. Aquí puedes contar un poco sobre ti y tu fotografía.</p>
+      </div>
+    </section>
+
+    <section class='window hidden' id='win-contact'>
+      <div class='titlebar'><span>✉️ Contacto</span><button class='close'>X</button></div>
+      <div class='content'>
+        <p>Email: <a href='mailto:tu@email.com'>tu@email.com</a></p>
+        <p>Instagram: <a href='https://instagram.com/' target='_blank'>@tuusuario</a></p>
+      </div>
+    </section>
+  </main>
+
+  <div class='lightbox hidden'><img src='' alt='Imagen grande'></div>
+  <script src='js/main.js'></script>
+</body>
+</html>
